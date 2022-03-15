@@ -1,0 +1,134 @@
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import Opposition from './Opposition';
+import Story from './Story';
+import Features from './Features';
+
+const ResultComponent = ({ result }) => {
+    const [character, setCharacter] = useState('');
+    const [image, setImage] = useState();
+    const answer = result;
+
+    useEffect(() => {
+        switch (result) {
+            case "Meros":
+                import('../resources/aaa.png')
+                    .then((obj) => {
+                        setImage(obj.default);
+                        setCharacter("도깨비 공유");
+                    })
+                    .catch();
+                break;
+            case "Mstorge":
+                import('../resources/aaa.png')
+                    .then((obj) => {
+                        setImage(obj.default);
+                        setCharacter("응답하라 쓰레기");
+                    })
+                    .catch();
+                break;
+            case "Mludus":
+                import('../resources/aaa.png')
+                    .then((obj) => {
+                        setImage(obj.default);
+                        setCharacter("참을 수 없는 존재의 가벼움 토마시");
+                    })
+                    .catch();
+                break;
+            case "Magape":
+                import('../resources/aaa.png')
+                    .then((obj) => {
+                        setImage(obj.default);
+                        setCharacter("킬미힐미 박서준");
+                    })
+                    .catch();
+                break;
+            case "Mmania":
+                import('../resources/aaa.png')
+                    .then((obj) => {
+                        setImage(obj.default);
+                        setCharacter("탐나는 인재 5기 손상훈님");
+                    })
+                    .catch();
+                break;
+            case "Mfragma":
+                import('../resources/aaa.png')
+                    .then((obj) => {
+                        setImage(obj.default);
+                        setCharacter("펜트하우스 하윤철(윤종훈)");
+                    })
+                    .catch();
+                break;
+            case "Weros":
+                import('../resources/aaa.png')
+                    .then((obj) => {
+                        setImage(obj.default);
+                        setCharacter("유미의 세포들 김유미");
+                    })
+                    .catch();
+                break;
+            case "Wmania":
+                import('../resources/aaa.png')
+                    .then((obj) => {
+                        setImage(obj.default);
+                        setCharacter("짧은 대본 이나(윤상정)");
+                    })
+                    .catch();
+                break;
+            case "Wagape":
+                import('../resources/aaa.png')
+                    .then((obj) => {
+                        setImage(obj.default);
+                        setCharacter("아낌없이 주는 나무");
+                    })
+                    .catch();
+                break;
+            case "Wstorge":
+                import('../resources/aaa.png')
+                    .then((obj) => {
+                        setImage(obj.default);
+                        setCharacter("해리포터 헤르미온느");
+                    })
+                    .catch();
+                break;
+            case "Wfragma":
+                import('../resources/aaa.png')
+                    .then((obj) => {
+                        setImage(obj.default);
+                        setCharacter("가담항설 백매");
+                    })
+                    .catch();
+                break;
+            case "Wludus":
+                import('../resources/aaa.png')
+                    .then((obj) => {
+                        setImage(obj.default);
+                        setCharacter("나를 미치게 하는 여자 에이미(아미 슈머)");
+                    })
+                    .catch();
+                break;
+            default:
+                break;
+        }
+    })
+
+    return (
+        <div>
+            <div className='result-container'>
+                <h1>당신의 연애 캐릭터는</h1>
+                {/* <img alt="result-image" src={image} /> */}
+                <p>{character}입니다. <br /> </p>
+                <Features result={answer} />
+                <Opposition result={answer} />
+                <Story result={answer} />
+                <p>
+                    <Link to={'..'} className="btn">
+                        테스트 다시 하기
+                    </Link>
+                </p>
+            </div>
+        </div>
+    )
+}
+
+export default ResultComponent;
