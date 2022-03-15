@@ -118,9 +118,9 @@ const ResultComponent = ({ result }) => {
                 <h1>당신의 연애 캐릭터는</h1>
                 {/* <img alt="result-image" src={image} /> */}
                 <p>{character}입니다. <br /> </p>
+                <Story result={answer} />
                 <Features result={answer} />
                 <Opposition result={answer} />
-                <Story result={answer} />
                 <p>
                     <Link to={'..'} className="btn">
                         테스트 다시 하기

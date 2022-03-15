@@ -4,6 +4,7 @@ const Opposition = (result) => {
     const [category, setCategory] = useState('');
     const [text, setText] = useState('');
     const yourCategory = result.result;
+
     useEffect(() => {
         switch (yourCategory) {
             case "Meros":
@@ -58,8 +59,7 @@ const Opposition = (result) => {
                 break;
         }
     }, [yourCategory]);
-    console.log(category);
-    console.log(text);
+
 
     return (
         <div>
