@@ -116,7 +116,7 @@ const ResultComponent = ({ result }) => {
         <div>
             <div className='result-container'>
                 <h1>당신의 연애 캐릭터는</h1>
-                {/* <img alt="result-image" src={image} /> */}
+                <img alt="result-img" src={image} />
                 <p>{character}입니다. <br /> </p>
                 <Story result={answer} />
                 <Features result={answer} />

@@ -519,7 +519,8 @@ const Questions = () => {
             })
         }
     }
-        , [category]);
+        , [category, isMan, navigate, questionNum]);
+    // ,[category]);
 
     const nextQuestion = (e) => {
         const btnNum = e.target.className.slice(0, 5);

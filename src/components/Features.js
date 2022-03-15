@@ -48,7 +48,7 @@ const Features = (result) => {
             default:
                 break;
         }
-    }, [])
+    }, [yourCategory])
 
     return (
         <div>
