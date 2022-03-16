@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Opposition from './Opposition';
 import Story from './Story';
 import Features from './Features';
-import KaKao from './kakao';
+// import KaKao from './kakao';
 
 const ResultComponent = ({ result }) => {
     const [character, setCharacter] = useState('');
