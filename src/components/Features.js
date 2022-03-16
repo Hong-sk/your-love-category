@@ -9,7 +9,8 @@ const Features = (result) => {
 
     useEffect(() => {
         switch (yourCategory) {
-            case "Meros" || "Weros":
+            case "Meros":
+            case "Weros":
                 setText1('열정적이고 정열적인 사랑을 추구하는 당신은 운명적인 사랑을 꿈꿉니다.')
                 setText2('사랑은 최고의 가치이며 사랑하는 사람에게 몰입하고 뜨겁게 사랑합니다.')
                 setText3('첫눈에 반하기도 하며, 상대방의 외모를 보는 경향이 있습니다.')
@@ -21,7 +22,8 @@ const Features = (result) => {
                 setText3('애인에게 많이 기대고 의지하는 편입니다. ')
                 setText4('상대방에게 애정표현과 관심을 받는 것을 좋아해요.')
                 break;
-            case "Mstorge" || "Wstorge":
+            case "Mstorge":
+            case "Wstorge":
                 setText1('상대방에 대한 신뢰와 믿음을 중요시해 원래 알던 사이에서 연인 관계로 발전하는 경우가 많아요.')
                 setText2('뜻이 맞고 재미있는 일을 함께하며 일상을 공유할 수 있는 연애를 선호해요.')
                 setText3('설레는 연애보단 친구같은 편안한 연애를 좋아해요.')
