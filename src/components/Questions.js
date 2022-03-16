@@ -164,7 +164,7 @@ const Questions = () => {
                         addProperty("eros", 0);
                         break;
                     case 5:
-                        addProperty("fragma", 0); // 수정할 것 - 에로스랑 수치 조정 필요
+                        addProperty("fragma", 4); // 수정할 것 - 에로스랑 수치 조정 필요
                         break;
                     case 6:
                         addProperty("fragma", 0);
@@ -185,7 +185,7 @@ const Questions = () => {
                         addProperty("storge", 0);
                         break;
                     case 12:
-                        addProperty("storge", 0);// 스토르게, 매니아 조정할 것
+                        addProperty("mania", 4);// 스토르게, 매니아 조정할 것
                         break;
                     case 13:
                         addProperty("mania", 0);
@@ -206,7 +206,7 @@ const Questions = () => {
                         addProperty("agape", 0);
                         break;
                     case 19:
-                        addProperty("ludus", 0); // 루두스랑 조정할 것
+                        addProperty("agape", 4); // 루두스랑 조정할 것
                         break;
                     case 20:
                         addProperty("ludus", 0);
@@ -236,7 +236,7 @@ const Questions = () => {
                         addProperty("eros", 1);
                         break;
                     case 5:
-                        addProperty("fragma", 1);
+                        addProperty("fragma", 2);
                         break;
                     case 6:
                         addProperty("fragma", 1);
@@ -257,7 +257,7 @@ const Questions = () => {
                         addProperty("storge", 1);
                         break;
                     case 12:
-                        addProperty("storge", 1);// 스토르게, 매니아 조정할 것
+                        addProperty("mania", 2);// 스토르게, 매니아 조정할 것
                         break;
                     case 13:
                         addProperty("mania", 1);
@@ -278,7 +278,7 @@ const Questions = () => {
                         addProperty("agape", 1);
                         break;
                     case 19:
-                        addProperty("ludus", 1); // 루두스랑 조정할 것
+                        addProperty("agape", 2); // 루두스랑 조정할 것
                         break;
                     case 20:
                         addProperty("ludus", 1);
@@ -305,7 +305,7 @@ const Questions = () => {
                         addProperty("eros", 2);
                         break;
                     case 5:
-                        addProperty("eros", 2);
+                        addProperty("eros", 0);
                         break;
                     case 6:
                         addProperty("fragma", 2);
@@ -326,7 +326,7 @@ const Questions = () => {
                         addProperty("storge", 2);
                         break;
                     case 12:
-                        addProperty("storge", 2);// 스토르게, 매니아 조정할 것
+                        addProperty("storge", 0);// 스토르게, 매니아 조정할 것
                         break;
                     case 13:
                         addProperty("mania", 2);
@@ -347,7 +347,7 @@ const Questions = () => {
                         addProperty("agape", 2);
                         break;
                     case 19:
-                        addProperty("ludus", 2); // 루두스랑 조정할 것
+                        addProperty("ludus", 0); // 루두스랑 조정할 것
                         break;
                     case 20:
                         addProperty("ludus", 2);
@@ -377,7 +377,7 @@ const Questions = () => {
                         addProperty("eros", 3);
                         break;
                     case 5:
-                        addProperty("fragma", 3); // 수정할 것 - 에로스랑 수치 조정 필요
+                        addProperty("eros", 2); // 수정할 것 - 에로스랑 수치 조정 필요
                         break;
                     case 6:
                         addProperty("fragma", 3);
@@ -398,7 +398,7 @@ const Questions = () => {
                         addProperty("storge", 3);
                         break;
                     case 12:
-                        addProperty("storge", 3);// 스토르게, 매니아 조정할 것
+                        addProperty("storge", 2);// 스토르게, 매니아 조정할 것
                         break;
                     case 13:
                         addProperty("mania", 3);
@@ -419,7 +419,7 @@ const Questions = () => {
                         addProperty("agape", 3);
                         break;
                     case 19:
-                        addProperty("ludus", 3); // 루두스랑 조정할 것
+                        addProperty("ludus", 2); // 루두스랑 조정할 것
                         break;
                     case 20:
                         addProperty("ludus", 3);
@@ -449,7 +449,7 @@ const Questions = () => {
                         addProperty("eros", 4);
                         break;
                     case 5:
-                        addProperty("fragma", 4); // 수정할 것 - 에로스랑 수치 조정 필요
+                        addProperty("eros", 4); // 수정할 것 - 에로스랑 수치 조정 필요
                         break;
                     case 6:
                         addProperty("fragma", 4);

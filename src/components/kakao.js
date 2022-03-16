@@ -59,22 +59,22 @@ function KaKao(result) {
                     mobileWebUrl: 'https://lovestyle.netlify.app/',
                 }
             },
-            buttons: [
-                // {
-                //     title: '결과 보기',
-                //     link: {
-                //         webUrl: 'https://lovestyle.netlify.app//result/',
-                //         mobileWebUrl: 'https://lovestyle.netlify.app//result/'
-                //     }
-                // },
-                {
-                    title: '테스트하기',
-                    link: {
-                        webUrl: 'https://lovestyle.netlify.app/',
-                        mobileWebUrl: 'https://lovestyle.netlify.app/',
-                    }
+            buttons:
+            // {
+            //     title: '결과 보기',
+            //     link: {
+            //         webUrl: 'https://lovestyle.netlify.app//result/',
+            //         mobileWebUrl: 'https://lovestyle.netlify.app//result/'
+            //     }
+            // },
+            {
+                title: '테스트하기',
+                link: {
+                    webUrl: 'https://lovestyle.netlify.app/',
+                    mobileWebUrl: 'https://lovestyle.netlify.app/',
                 }
-            ]
+            }
+
         });
     };
 
