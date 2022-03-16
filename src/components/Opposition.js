@@ -8,12 +8,12 @@ const Opposition = (result) => {
     useEffect(() => {
         switch (yourCategory) {
             case "Meros":
-                setCategory("프라그마")
-                setText("뜨겁게 사랑하는 당신! 사랑을 자신에게 도움이 되는지를 생각하고 판단하는 프라그마 형(캐릭터로 바꿀 것)이 당신에게는 계산적이고 이해타산적으로 보일 수도 있어요. ")
+                setCategory("가담항설 백매")
+                setText("뜨겁게 사랑하는 당신! 사랑을 자신에게 도움이 되는지를 생각하고 판단하는 가담항설의 백매가 당신에게는 계산적이고 이해타산적으로 보일 수도 있어요. ")
                 break;
             case "Weros":
-                setCategory("프라그마")
-                setText("뜨겁게 사랑하는 당신! 사랑을 자신에게 도움이 되는지를 생각하고 판단하는 프라그마 형(캐릭터로 바꿀 것)이 당신에게는 계산적이고 이해타산적으로 보일 수도 있어요. ")
+                setCategory("펜트하우스 하윤철")
+                setText("뜨겁게 사랑하는 당신! 사랑을 자신에게 도움이 되는지를 생각하고 판단하는 펜트하우스의 하윤철이 당신에게는 계산적이고 이해타산적으로 보일 수도 있어요. ")
                 break;
             case "Magape":
                 setCategory("나를 미치게 하는 여자 에이미(아미 슈머)")
@@ -28,7 +28,7 @@ const Opposition = (result) => {
                 setText("여러 사람과 동시에 사랑할 수도 있다고 생각하는 당신! 한 사람에게 올인하며 헌신하는 아가페 유형이랑 만난다면 상처만 가득한 연애를 줄 수도 있을 거에요.")
                 break;
             case "Wludus":
-                setCategory("킬미힐미 박서준")
+                setCategory("킬미힐미 오리온(박서준)")
                 setText("여러 사람과 동시에 사랑할 수도 있다고 생각하는 당신! 한 사람에게 올인하며 헌신하는 아가페 유형이랑 만난다면 상처만 가득한 연애를 줄 수도 있을 거에요.")
                 break;
             case "Mfragma":
