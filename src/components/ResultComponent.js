@@ -122,14 +122,16 @@ const ResultComponent = ({ result }) => {
                 <Story result={answer} />
                 <Features result={answer} />
                 <Opposition result={answer} />
-                <p>
-                    <Link to={'..'} className="btn">
-                        테스트 다시 하기
-                    </Link>
-                </p>
-                <KaKao result={answer} />
+                <div style={{ display: 'flex' }}>
+                    <p>
+                        <Link to={'..'} style={{ marginTop: '0', marginRight: '20px' }}>
+                            테스트 다시 하기
+                        </Link>
+                    </p>
+                    <KaKao result={answer} />
+                </div>
             </div>
-        </div>
+        </div >
     )
 }
 

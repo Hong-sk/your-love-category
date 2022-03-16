@@ -60,13 +60,13 @@ function KaKao(result) {
                 }
             },
             buttons: [
-                {
-                    title: '결과 보기',
-                    link: {
-                        webUrl: 'https://lovestyle.netlify.app//result/',
-                        mobileWebUrl: 'https://lovestyle.netlify.app//result/'
-                    }
-                },
+                // {
+                //     title: '결과 보기',
+                //     link: {
+                //         webUrl: 'https://lovestyle.netlify.app//result/',
+                //         mobileWebUrl: 'https://lovestyle.netlify.app//result/'
+                //     }
+                // },
                 {
                     title: '테스트하기',
                     link: {

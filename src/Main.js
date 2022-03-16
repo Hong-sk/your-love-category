@@ -18,7 +18,8 @@ const FirstPage = () => {
       </h3>
       <img
         className="mainImg"
-        src="https://via.placeholder.com/300"
+        // src="https://via.placeholder.com/300"
+        src="resources/people.jpg"
         alt="mainImage"
       />
       <Link to="/intro/" className="btn bigBtn">
