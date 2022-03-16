@@ -8,34 +8,63 @@ const Result = () => {
     const { isMan, category } = location.state;
     const [isLoading, setIsLoading] = useState(true);
     const result = () => {
+        let word;
         let resultString = isMan ? "W" : "M";
         const { eros, ludus, storge, agape, fragma, mania } = category;
-        // 여기도 수정해야함. 제일 높은 숫자를 가져오기 때문에
         const biggest = Math.max(eros, ludus, storge, agape, fragma, mania);
-        if (eros === biggest) {
-            const word = "eros"
-            resultString = resultString + word;
-        };
-        if (ludus === biggest) {
-            const word = "ludus"
-            resultString = resultString + word;
-        };
-        if (storge === biggest) {
-            const word = "storge"
-            resultString = resultString + word;
-        };
-        if (agape === biggest) {
-            const word = "agape"
-            resultString = resultString + word;
-        };
-        if (fragma === biggest) {
-            const word = "fragma"
-            resultString = resultString + word;
-        };
-        if (mania === biggest) {
-            const word = "mania"
-            resultString = resultString + word;
-        };
+        switch (biggest) {
+            case eros:
+                word = "eros"
+                resultString = resultString + word;
+                break;
+            case ludus:
+                word = "ludus"
+                resultString = resultString + word;
+                break;
+            case storge:
+                word = "storge"
+                resultString = resultString + word;
+                break;
+            case mania:
+                word = "mania"
+                resultString = resultString + word;
+                break;
+            case fragma:
+                word = "fragma"
+                resultString = resultString + word;
+                break;
+            case agape:
+                word = "agape"
+                resultString = resultString + word;
+                break;
+            default:
+                break;
+        }
+
+        //     if (eros === biggest) {
+        //         const word = "eros"
+        //         resultString = resultString + word;
+        //     };
+        //     if (ludus === biggest) {
+        //         const word = "ludus"
+        //         resultString = resultString + word;
+        //     };
+        //     if (storge === biggest) {
+        //         const word = "storge"
+        //         resultString = resultString + word;
+        //     };
+        //     if (agape === biggest) {
+        //         const word = "agape"
+        //         resultString = resultString + word;
+        //     };
+        //     if (fragma === biggest) {
+        //         const word = "fragma"
+        //         resultString = resultString + word;
+        //     };
+        //     if (mania === biggest) {
+        //         const word = "mania"
+        //         resultString = resultString + word;
+        //     };
         return resultString;
     };
 

@@ -62,10 +62,10 @@ const Opposition = (result) => {
 
 
     return (
-        <div>
+        <div className='opposition'>
             <h2>기피대상 연애캐릭터</h2>
-            <h3> {category} </h3>
-            <h3> {text} </h3>
+            <p> {category} </p>
+            <p> {text} </p>
         </div>
     );
 };

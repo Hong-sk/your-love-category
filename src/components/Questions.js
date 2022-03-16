@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ProgressBar from './ProgressBar';
 
 const Questions = () => {
     const navigate = useNavigate();
@@ -15,8 +16,8 @@ const Questions = () => {
     })
 
     const [question, setQuestion] = useState('1. 당신의 성별은??');
-    const [btn1Text, setBtn1Text] = useState('여자')
-    const [btn2Text, setBtn2Text] = useState('남자')
+    const [btn1Text, setBtn1Text] = useState('여')
+    const [btn2Text, setBtn2Text] = useState('남')
     const [btn3Text, setBtn3Text] = useState('')
     const [btn4Text, setBtn4Text] = useState('')
     const [btn5Text, setBtn5Text] = useState('')
@@ -25,11 +26,11 @@ const Questions = () => {
         switch (questionNum) {
             case 2:
                 setQuestion("2. 애인에게 속마음을 잘 드러내고 애정표현 완전 듬뿍!");
-                setBtn1Text('1.  거의 해당하지 않는다.')
-                setBtn2Text('2. 약간 해당하지 않는 편이다.')
-                setBtn3Text('3. 중간 정도인 것 같다.')
-                setBtn4Text('4. 약간 해당하는 편이다.')
-                setBtn5Text('5. 거의 해당하는 편이다.')
+                setBtn1Text('1')
+                setBtn2Text('2')
+                setBtn3Text('3')
+                setBtn4Text('4')
+                setBtn5Text('5')
                 break;
             case 3:
                 setQuestion(
@@ -533,8 +534,9 @@ const Questions = () => {
 
     return (
         <div>
+            <ProgressBar questionNum={questionNum} />
             <h3>{question}</h3>
-            <div>
+            <div className='buttonCase'>
                 <button
                     className="btn_1 btn"
                     onClick={nextQuestion}

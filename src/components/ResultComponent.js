@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Opposition from './Opposition';
 import Story from './Story';
 import Features from './Features';
+import KaKao from './kakao';
 
 const ResultComponent = ({ result }) => {
     const [character, setCharacter] = useState('');
@@ -12,23 +13,23 @@ const ResultComponent = ({ result }) => {
     useEffect(() => {
         switch (result) {
             case "Meros":
-                import('../resources/aaa.png')
+                import('../resources/Meros.jpg')
                     .then((obj) => {
                         setImage(obj.default);
-                        setCharacter("도깨비 공유");
+                        setCharacter("도깨비 김신(공유)");
                     })
                     .catch();
                 break;
             case "Mstorge":
-                import('../resources/aaa.png')
+                import('../resources/Mstorge.jpg')
                     .then((obj) => {
                         setImage(obj.default);
-                        setCharacter("응답하라 쓰레기");
+                        setCharacter("응답하라 쓰레기(정우)");
                     })
                     .catch();
                 break;
             case "Mludus":
-                import('../resources/aaa.png')
+                import('../resources/Mludus.jpg')
                     .then((obj) => {
                         setImage(obj.default);
                         setCharacter("참을 수 없는 존재의 가벼움 토마시");
@@ -36,15 +37,15 @@ const ResultComponent = ({ result }) => {
                     .catch();
                 break;
             case "Magape":
-                import('../resources/aaa.png')
+                import('../resources/Magape.jpg')
                     .then((obj) => {
                         setImage(obj.default);
-                        setCharacter("킬미힐미 박서준");
+                        setCharacter("킬미힐미 오리온(박서준)");
                     })
                     .catch();
                 break;
             case "Mmania":
-                import('../resources/aaa.png')
+                import('../resources/Mmania.jpg')
                     .then((obj) => {
                         setImage(obj.default);
                         setCharacter("탐나는 인재 5기 손상훈님");
@@ -52,7 +53,7 @@ const ResultComponent = ({ result }) => {
                     .catch();
                 break;
             case "Mfragma":
-                import('../resources/aaa.png')
+                import('../resources/Mfragma.jpg')
                     .then((obj) => {
                         setImage(obj.default);
                         setCharacter("펜트하우스 하윤철(윤종훈)");
@@ -60,7 +61,7 @@ const ResultComponent = ({ result }) => {
                     .catch();
                 break;
             case "Weros":
-                import('../resources/aaa.png')
+                import('../resources/Weros.jpg')
                     .then((obj) => {
                         setImage(obj.default);
                         setCharacter("유미의 세포들 김유미");
@@ -68,7 +69,7 @@ const ResultComponent = ({ result }) => {
                     .catch();
                 break;
             case "Wmania":
-                import('../resources/aaa.png')
+                import('../resources/Wmania.jpg')
                     .then((obj) => {
                         setImage(obj.default);
                         setCharacter("짧은 대본 이나(윤상정)");
@@ -76,7 +77,7 @@ const ResultComponent = ({ result }) => {
                     .catch();
                 break;
             case "Wagape":
-                import('../resources/aaa.png')
+                import('../resources/Wagape.jpg')
                     .then((obj) => {
                         setImage(obj.default);
                         setCharacter("아낌없이 주는 나무");
@@ -84,7 +85,7 @@ const ResultComponent = ({ result }) => {
                     .catch();
                 break;
             case "Wstorge":
-                import('../resources/aaa.png')
+                import('../resources/Wstorge.jpg')
                     .then((obj) => {
                         setImage(obj.default);
                         setCharacter("해리포터 헤르미온느");
@@ -92,7 +93,7 @@ const ResultComponent = ({ result }) => {
                     .catch();
                 break;
             case "Wfragma":
-                import('../resources/aaa.png')
+                import('../resources/Wfragma.png')
                     .then((obj) => {
                         setImage(obj.default);
                         setCharacter("가담항설 백매");
@@ -100,7 +101,7 @@ const ResultComponent = ({ result }) => {
                     .catch();
                 break;
             case "Wludus":
-                import('../resources/aaa.png')
+                import('../resources/Wludus.jpg')
                     .then((obj) => {
                         setImage(obj.default);
                         setCharacter("나를 미치게 하는 여자 에이미(아미 슈머)");
@@ -117,7 +118,7 @@ const ResultComponent = ({ result }) => {
             <div className='result-container'>
                 <h1>당신의 연애 캐릭터는</h1>
                 <img alt="result-img" src={image} />
-                <p>{character}입니다. <br /> </p>
+                <p className='result-category'>{character}입니다. <br /> </p>
                 <Story result={answer} />
                 <Features result={answer} />
                 <Opposition result={answer} />
@@ -126,6 +127,7 @@ const ResultComponent = ({ result }) => {
                         테스트 다시 하기
                     </Link>
                 </p>
+                {/* <Kakao result={answer} /> */}
             </div>
         </div>
     )
