@@ -7,6 +7,7 @@ import RouteMatchNothing from "./components/RouteMatchNothing";
 // import Title from "./resources/image/title.gif";
 import "./App.scss"
 import { Col, Container } from 'react-bootstrap';
+import mainImg from "./resources/people.jpg";
 
 const FirstPage = () => {
   return (
@@ -19,7 +20,7 @@ const FirstPage = () => {
       <img
         className="mainImg"
         // src="https://via.placeholder.com/300"
-        src="resources/people.jpg"
+        src={mainImg}
         alt="mainImage"
       />
       <Link to="/intro/" className="btn bigBtn">
