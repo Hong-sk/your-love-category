@@ -124,7 +124,7 @@ const ResultComponent = ({ result }) => {
                 <Opposition result={answer} />
                 <div style={{ display: 'flex' }}>
                     <p>
-                        <Link to={'..'} style={{ marginTop: '0', marginRight: '20px' }}>
+                        <Link to={'..'} style={{ marginTop: '0', marginRight: '20px', color: '#3498db' }}>
                             테스트 다시 하기
                         </Link>
                     </p>

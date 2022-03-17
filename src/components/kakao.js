@@ -73,26 +73,28 @@ function KaKao(result) {
                 }
             },
             buttons:
-            // {
-            //     title: '결과 보기',
-            //     link: {
-            //         webUrl: 'https://lovestyle.netlify.app//result/',
-            //         mobileWebUrl: 'https://lovestyle.netlify.app//result/'
-            //     }
-            // },
-            {
-                title: '테스트하기',
-                link: {
-                    webUrl: 'https://lovestyle.netlify.app/',
-                    mobileWebUrl: 'https://lovestyle.netlify.app/',
-                }
-            }
+                [
+                    // {
+                    //     title: '결과 보기',
+                    //     link: {
+                    //         webUrl: 'https://lovestyle.netlify.app//result/',
+                    //         mobileWebUrl: 'https://lovestyle.netlify.app//result/'
+                    //     }
+                    // },
+                    {
+                        title: '테스트하기',
+                        link: {
+                            webUrl: 'https://lovestyle.netlify.app/',
+                            mobileWebUrl: 'https://lovestyle.netlify.app/',
+                        }
+                    }
+                ]
 
         });
     };
 
     return (
-        <div onClick={onHandleShareKaKao} >
+        <div onClick={onHandleShareKaKao} className="kkkk">
             카톡으로 공유하기
         </div>
     );
